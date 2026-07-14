@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Hendelson Six";
+    src: url("fonts/Hendelson-Six.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: "Hendelson Five";
+    src: url("fonts/Hendelson-Five.woff2") format("opentype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            135deg,
+            #050505 0%,
+            #151515 35%,
+            #450000 70%,
+            #8b0000 100%
+        );
+
+    color: white;
+    overflow: hidden;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 60px;
+
+    animation: slideDown 1s ease-out;
+}
+
+
+.logo img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+nav {
+    display: flex;
+    gap: 45px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-family: "Hendelson Six", sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #ff3333;
+}
+
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0%;
+    height: 2px;
+
+    background: white;
+
+    transition: width 0.3s ease;
+}
+
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* Main title */
+
+main {
+    height: calc(100vh - 100px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: "Hendelson Six", sans-serif;
+
+    font-size: clamp(50px, 8vw, 120px);
+    font-weight: normal;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    animation:
+        fadeUp 1.5s ease-out,
+        glow 4s infinite alternate;
+}
+
+
+/* Animations */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes glow {
+
+    from {
+        text-shadow: 
+            0 0 5px rgba(255,255,255,0.2);
+    }
+
+    to {
+        text-shadow:
+            0 0 20px rgba(255,255,255,0.45);
+    }
+}
