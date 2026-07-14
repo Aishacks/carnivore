@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Hendelson Six";
-    src: url("fonts/Hendelson-Six.woff2") format("opentype");
+    src: url("fonts/Hendelson-Six.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Hendelson Five";
-    src: url("fonts/Hendelson-Five.woff2") format("opentype");
+    src: url("fonts/Hendelson-Five.otf") format("opentype");
 }
 
 
