@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Hendelson Six";
-    src: url("fonts/Hendelson-Six.otf") format("opentype");
+    font-family: "Handelson Six";
+    src: url("fonts/Handelson-Six.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "Hendelson Five";
-    src: url("fonts/Hendelson-Five.otf") format("opentype");
+    font-family: "Handelson Five";
+    src: url("fonts/Handelson-Five.otf") format("opentype");
 }
 
 
@@ -65,7 +65,7 @@ nav a {
     color: white;
     text-decoration: none;
 
-    font-family: "Hendelson Six", sans-serif;
+    font-family: "Handelson Six", sans-serif;
     font-size: 22px;
     letter-spacing: 2px;
 
@@ -113,7 +113,7 @@ main {
 
 
 h1 {
-    font-family: "Hendelson Six", sans-serif;
+    font-family: "Handelson Six", sans-serif;
 
     font-size: clamp(50px, 8vw, 120px);
     font-weight: normal;
